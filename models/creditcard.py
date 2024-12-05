@@ -9,3 +9,6 @@ class CreditCard(models.Model):
     expirationDate = fields.Date(string="Expiration date")
     cvv = fields.Char(string="CVV")
     pin =fields.Char(string="PIN")
+
+    #relational fields
+    accountNumber = fields.Many2one(comodel_name="grupo4.account", string="Account", required=True, ondelete="cascade")
