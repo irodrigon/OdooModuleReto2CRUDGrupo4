@@ -12,3 +12,4 @@ class CreditCard(models.Model):
 
     #relational fields
     accountNumber = fields.Many2one(comodel_name="grupo4.account", string="Account", required=True, ondelete="cascade")
+    creditCardMovement = fields.One2many(comodel_name="grupo4.movements", inverse_name="creditCard", string="Movements", required=True)

@@ -10,3 +10,6 @@ class Movements(models.Model):
     transactionDate = fields.Datetime(string="Transaction Date")
     ammount = fields.Float(string="Ammount of money")
     typeOfMoney = fields.Char(string="Type Of money")
+
+
+    creditCard = fields.Many2one(comodel_name="grupo4.creditcard", string="Credit Card", required=True, ondelete="cascade")
