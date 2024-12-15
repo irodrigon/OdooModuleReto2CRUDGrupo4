@@ -13,5 +13,3 @@ class Movements(models.Model):
 
 
     creditCard = fields.Many2one(comodel_name="grupo4.creditcard", string="Credit Card", required=True, ondelete="cascade")
-
-    creditCard = fields.Many2one(comodel_name="grupo4.creditcard", string="Credit Card", required=True, ondelete="cascade")
