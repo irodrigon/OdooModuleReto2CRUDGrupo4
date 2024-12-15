@@ -2,7 +2,7 @@ from odoo import fields,models
 
 class CreditCard(models.Model):
     _name = "grupo4.creditcard"
-    _inherit = "grupo4.product"
+    _inherit="grupo4.product"
     _description = "saves credit cards"
 
     #simple fields
@@ -13,4 +13,5 @@ class CreditCard(models.Model):
 
     #relational fields
     accountNumber = fields.Many2one(comodel_name="grupo4.account", string="Account", required=True, ondelete="cascade")
-    cardId = fields.One2many(comodel_name="grupo4.movements", inverse_name="cardId", string="Movements")
+    creditCardMovement = fields.One2many(comodel_name="grupo4.movements", inverse_name="creditCard", string="Movements", required=True)
+
