@@ -2,6 +2,7 @@ from odoo import fields, models
 
 class Account(models.Model):
     _name = "grupo4.account"
+    _inherit="grupo4.product"
     _description = "guarda las cuentas de los usuarios"
 
     # campos simples

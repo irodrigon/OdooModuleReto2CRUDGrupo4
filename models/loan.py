@@ -4,6 +4,7 @@ from odoo.release import description
 
 class Loan (models.Model) :
     _name = "grupo4.loan"
+    _inherit = "grupo4.product"
     _description = "guarda los prestamos de cada usuario"
 
 
