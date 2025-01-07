@@ -15,3 +15,8 @@ class CreditCard(models.Model):
     accountNumber = fields.Many2one(comodel_name="grupo4.account", string="Account", required=True, ondelete="cascade")
     creditCardMovement = fields.One2many(comodel_name="grupo4.movements", inverse_name="creditCard", string="Movements", required=True)
 
+    customer_product_ids = fields.Many2many(
+        'grupo4.product',
+        'product_creditcard_rel', 'creditcard_id', 'product_id',
+        string='Customer Products'
+    )

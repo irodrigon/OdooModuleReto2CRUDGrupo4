@@ -14,3 +14,9 @@ class Loan (models.Model) :
     remainingBalance = fields.Float(string= "El monto que falta por pagar")
     period = fields.Integer(string="La periodicidad con la que se paga el prestamo en dias")
     description = fields.Char(string="Descripción personal del motivo del prestamo")
+
+    customer_product_ids = fields.Many2many(
+        'grupo4.product',
+        'product_loan_rel', 'loan_id', 'product_id',
+        string='Customer Products'
+    )
