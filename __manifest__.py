@@ -4,6 +4,10 @@
     'description' : 'The bank that helps you',
     'autor' : 'Grupo4',
     'depends': ['base', 'auth_signup'],
-    'data' : []
+    'data' : [
+        'security/rovobank_security.xml',
+        'security/ir.model.access.csv',
+        'views/rovobankmenu.xml'
+    ]
 }
 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Administrators group -->
+   <record id="admin_group" model="res.groups">
+       <field name="name">Rovobank Administrator</field>
+   </record>
+
+    <!-- Customers group -->
+    <record id="customer_group" model="res.groups">
+       <field name="name">Rovobank Customers</field>
+   </record>
+
+    <!-- Group's permissions -->
+
+    <record id="administrator_access_admin" model="ir.model.access">
+        <field name="name">Admin Admin access</field>
+        <field name="model_id" ref="model_grupo4_admin"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_product" model="ir.model.access">
+        <field name="name">Product Admin access</field>
+        <field name="model_id" ref="model_grupo4_product"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_account" model="ir.model.access">
+        <field name="name">Account Admin access</field>
+        <field name="model_id" ref="model_grupo4_account"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_creditcard" model="ir.model.access">
+        <field name="name">Credit Card Admin access</field>
+        <field name="model_id" ref="model_grupo4_creditcard"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_customer" model="ir.model.access">
+        <field name="name">Customer Admin access</field>
+        <field name="model_id" ref="model_grupo4_customer"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_loan" model="ir.model.access">
+        <field name="name">Loan Admin access</field>
+        <field name="model_id" ref="model_grupo4_loan"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_movements" model="ir.model.access">
+        <field name="name">Movements Admin access</field>
+        <field name="model_id" ref="model_grupo4_movements"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+    <record id="administrator_access_user" model="ir.model.access">
+        <field name="name">User Admin access</field>
+        <field name="model_id" ref="model_grupo4_user"/>
+        <field name="group_id" ref="admin_group"/>
+    </record>
+
+   <record id="customer_access_loan" model="ir.model.access">
+        <field name="name">Loan Customer access</field>
+        <field name="model_id" ref="model_grupo4_loan"/>
+        <field name="group_id" ref="customer_group"/>
+   </record>
+
+    <record id="customer_access_account" model="ir.model.access">
+        <field name="name">Account Customer access</field>
+        <field name="model_id" ref="model_grupo4_account"/>
+        <field name="group_id" ref="customer_group"/>
+   </record>
+
+    <record id="customer_access_creditcard" model="ir.model.access">
+        <field name="name">Credit Card Customer access</field>
+        <field name="model_id" ref="model_grupo4_creditcard"/>
+        <field name="group_id" ref="customer_group"/>
+   </record>
+
+
+</odoo>

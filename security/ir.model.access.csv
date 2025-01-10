@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+administrator_access_admin,Admin Admin access,model_grupo4_admin,admin_group,1,1,1,1
+administrator_access_product,Product Admin access,model_grupo4_product,admin_group,1,1,1,1
+administrator_access_account,Account Admin access,model_grupo4_account,admin_group,1,1,1,1
+administrator_access_creditcard,Credit Card Admin access,model_grupo4_creditcard,admin_group,1,1,1,1
+administrator_access_customer,Customer Admin access,model_grupo4_customer,admin_group,1,1,1,1
+administrator_access_loan,Loan Admin access,model_grupo4_loan,admin_group,1,1,1,1
+administrator_access_user,User Admin access,model_grupo4_user,admin_group,1,1,1,1
+administrator_access_movements,Movements Admin access,model_grupo4_movements,admin_group,1,1,1,1
+customer_access_loan,Loan Customer access,model_grupo4_loan,customer_group,1,0,0,0
+customer_access_account,Account Customer access,model_grupo4_account,customer_group,1,0,0,0
+customer_access_creditcard,Credit Card Customer access,model_grupo4_creditcard,customer_group,1,0,0,0
