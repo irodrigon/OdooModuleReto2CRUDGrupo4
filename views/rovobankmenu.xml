@@ -18,9 +18,23 @@
         <field name="view_mode">tree,form,kanban</field>
     </record>
 
+    <record id="action_creditcard" model="ir.actions.act_window">
+        <field name="name">Credit Cards</field>
+        <field name="res_model">grupo4.creditcard</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record id="action_movement" model="ir.actions.act_window">
+        <field name="name">Movements</field>
+        <field name="res_model">grupo4.movements</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
     <menuitem id="menu_rovobank_root" name="RovoBank"/>
 
     <menuitem id="menu_accounts" name="Accounts" parent="menu_rovobank_root" action="action_account"/>
     <menuitem id="menu_loans" name="Loans" parent="menu_rovobank_root" action="action_loan"/>
     <menuitem id="menu_customers" name="Customers" parent="menu_rovobank_root" action="action_customer"/>
+    <menuitem id="menu_creditcard" name="Credit Cards" parent="menu_rovobank_root" action="action_creditcard"/>
+    <menuitem id="menu_movement" name="Movements" parent="menu_rovobank_root" action="action_movement"/>
 </odoo>
