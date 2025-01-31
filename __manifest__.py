@@ -7,7 +7,8 @@
     'data' : [
         'security/rovobank_security.xml',
         'security/ir.model.access.csv',
-        'views/rovobankmenu.xml'
+        'views/rovobankmenu.xml',
+        'views/accountView.xml'
     ]
 }
 

@@ -7,9 +7,10 @@ class Account(models.Model):
 
     # campos simples
     balance = fields.Float(string="The ammount of money in the account")
+    accountNumber = fields.Char(string="The accounts number")
 
     #campos relacionales
-    accountNumber = fields.One2many(comodel_name="grupo4.creditcard", inverse_name="accountNumber", string="Credit Card")
+    credit_cards = fields.One2many(comodel_name="grupo4.creditcard", inverse_name="accountNumber", string="Credit Card")
     account_ids= fields.Many2many(comodel_name="grupo4.account", string="Transfer", relation="account_account_rel",column1="account_id",column2="related_account_id")
 
     customer_product_ids = fields.Many2many(

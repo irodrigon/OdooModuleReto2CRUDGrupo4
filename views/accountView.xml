@@ -1,0 +1,74 @@
+<!-- Vista treee -->
+<odoo>
+    <record id="accounts_tree" model="ir.ui.view">
+        <field name="name">Accounts.tree</field>
+        <field name="model">grupo4.account</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="accountNumber"/>
+                <field name="balance"/>
+                <field name="creationDate"/>
+                <field name="productId"/>
+                <field name="credit_cards"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista form-->
+    <record id="accounts_form" model="ir.ui.view">
+        <field name="name">Accounts.form</field>
+        <field name="model">grupo4.account</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="accountNumber"/>
+                        <field name="balance"/>
+                        <field name="creationDate"/>
+                        <field name="productId"/>
+                        <field name="credit_cards"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista search -->
+    <record id="accounts_search" model="ir.ui.view">
+        <field name="name">Accounts.search</field>
+        <field name="model">grupo4.account</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="accountNumber"/>
+                <field name="balance"/>
+                <field name="creationDate"/>
+                <field name="productId"/>
+                <field name="credit_cards"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Vista kanban-->
+    <record id="accounts_kanban" model="ir.ui.view">
+        <field name="name">Accounts.kanban</field>
+        <field name="model">grupo4.account</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_body">
+                                <div ><field name="accountNumber"/></div>
+                                <div ><field name="balance"/></div>
+                                <div ><field name="creationDate"/></div>
+                                <div ><field name="productId"/></div>
+                                <div ><field name="credit_cards"/></div>
+                            </div>
+                        </div>
+
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>
