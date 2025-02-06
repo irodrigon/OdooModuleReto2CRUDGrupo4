@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <!-- Vista Tree -->
+    <record id="view_loan_tree" model="ir.ui.view">
+        <field name="name">loan.tree</field>
+        <field name="model">grupo4.loan</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="loan_id"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="amount"/>
+                <field name="remaining_amount"/>
+                <field name="interest"/>
+                <field name="period"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista Form -->
+    <record id="view_loan_form" model="ir.ui.view">
+        <field name="name">loan.form</field>
+        <field name="model">grupo4.loan</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="loan_id"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="amount"/>
+                <field name="remaining_amount"/>
+                <field name="interest"/>
+                <field name="period"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista Search -->
+    <record id="view_loan_search" model="ir.ui.view">
+        <field name="name">loan.search</field>
+        <field name="model">grupo4.loan</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="loan_id"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="amount"/>
+                <field name="remaining_amount"/>
+                <field name="interest"/>
+                <field name="period"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Vista Kanban -->
+    <record id="view_loan_kanban" model="ir.ui.view">
+        <field name="name">loan.kanban</field>
+        <field name="model">grupo4.loan</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_body">
+                                <div><field name="loan_id"/></div>
+                                <div><field name="start_date"/></div>
+                                <div><field name="end_date"/></div>
+                                <div><field name="amount"/></div>
+                                <div><field name="remaining_amount"/></div>
+                                <div><field name="interest"/></div>
+                                <div><field name="period"/></div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>

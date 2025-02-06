@@ -1,0 +1,10 @@
+<odoo>
+    <record id="reportMovementAction" model="ir.actions.report">
+        <field name="name">Reporte de Movimientos</field>
+        <field name="model">grupo4.movements</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">2RETO_G4.reportMovement</field>
+        <field name="print_report_name">'Movement_Report_%s' % (object.transactionId)</field>
+        <field name="binding_model_id" ref="model_grupo4_movements"/>
+    </record>
+</odoo>

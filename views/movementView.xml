@@ -1,0 +1,78 @@
+<!-- Vista treee -->
+<odoo>
+    <record id="movement_tree" model="ir.ui.view">
+        <field name="name">Movements.tree</field>
+        <field name="model">grupo4.movements</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="transactionId"/>
+                <field name="transactionDate"/>
+                <field name="ammount"/>
+                <field name="typeOfMoney"/>
+                <field name="creditCard"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista form-->
+    <record id="movements_form" model="ir.ui.view">
+        <field name="name">Movements.form</field>
+        <field name="model">grupo4.movements</field>
+        <field name="arch" type="xml">
+        <!--field name="total_days_open" readonly="1"/-->
+            <form>
+                <sheet>
+                    <group>
+                        <field name="transactionId"/>
+                        <field name="transactionDate"/>
+                        <field name="ammount"/>
+                        <field name="typeOfMoney"/>
+                        <field name="creditCard"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista search -->
+    <record id="movements_search" model="ir.ui.view">
+        <field name="name">Movements.search</field>
+        <field name="model">grupo4.movements</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="transactionId"/>
+                <field name="transactionDate"/>
+                <field name="ammount"/>
+                <field name="typeOfMoney"/>
+                <field name="creditCard"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Vista kanban-->
+    <record id="movements_kanban" model="ir.ui.view">
+        <field name="name">Movements.kanban</field>
+        <field name="model">grupo4.movements</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_body">
+                                <div ><field name="transactionId"/></div>
+                                <div ><field name="transactionDate"/></div>
+                                <div ><field name="ammount"/></div>
+                                <div ><field name="typeOfMoney"/></div>
+                                <div ><field name="creditCard"/></div>
+                            </div>
+                        </div>
+
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+        <!-- reports-->
+
+
+</odoo>

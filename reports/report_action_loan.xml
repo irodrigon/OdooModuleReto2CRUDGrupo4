@@ -1,0 +1,10 @@
+<odoo>
+    <record id="reportLoanAction" model="ir.actions.report">
+        <field name="name">Reporte de Prestamos</field>
+        <field name="model">grupo4.loan</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">2RETO_G4.reportLoan</field>
+        <field name="print_report_name">'Loan_Report_%s' % (object.loan_id)</field>
+        <field name="binding_model_id" ref="model_grupo4_loan"/>
+    </record>
+</odoo>
