@@ -1,0 +1,10 @@
+<odoo>
+    <record id="reportCreditcardAction" model="ir.actions.report">
+        <field name="name">Reporte de Tarjeta de crédito</field>
+        <field name="model">grupo4.creditcard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">2RETO_G4.reportCreditcard</field>
+        <field name="print_report_name">'Creditcard_Report_%s' % (object.creditCardNumber)</field>
+        <field name="binding_model_id" ref="model_grupo4_creditcard"/>
+    </record>
+</odoo>

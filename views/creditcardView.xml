@@ -1,0 +1,88 @@
+<!-- Vista tree -->
+<odoo>
+    <record id="creditcards_tree" model="ir.ui.view">
+        <field name="name">Credit Cards.tree</field>
+        <field name="model">grupo4.creditcard</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="productId"/>
+                <field name="creditCardNumber"/>
+                <field name="creationDate"/>
+                <field name="expirationDate"/>
+                <field name="cvv"/>
+                <field name="pin"/>
+                <field name="accountNumber"/>
+                <field name="creditCardMovement"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista form-->
+    <record id="creditcards_form" model="ir.ui.view">
+        <field name="name">Credit Cards.form</field>
+        <field name="model">grupo4.creditcard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="productId"/>
+                        <field name="creditCardNumber"/>
+                        <field name="creationDate"/>
+                        <field name="expirationDate"/>
+                        <field name="cvv"/>
+                        <field name="pin"/>
+                        <field name="accountNumber"/>
+                        <field name="creditCardMovement"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista search -->
+    <record id="creditcards_search" model="ir.ui.view">
+        <field name="name">Credit Cards.search</field>
+        <field name="model">grupo4.creditcard</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="productId"/>
+                <field name="creditCardNumber"/>
+                <field name="creationDate"/>
+                <field name="expirationDate"/>
+                <field name="cvv"/>
+                <field name="pin"/>
+                <field name="accountNumber"/>
+                <field name="creditCardMovement"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Vista kanban-->
+    <record id="creditcards_kanban" model="ir.ui.view">
+        <field name="name">Credit Cards.kanban</field>
+        <field name="model">grupo4.creditcard</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_body">
+                                <div><field name="productId"/></div>
+                                <div><field name="creditCardNumber"/></div>
+                                <div><field name="creationDate"/></div>
+                                <div><field name="expirationDate"/></div>
+                                <div><field name="cvv"/></div>
+                                <div><field name="pin"/></div>
+                                <div><field name="accountNumber"/></div>
+                                <div><field name="creditCardMovement"/></div>
+                            </div>
+                        </div>
+
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="reportCreditcard">
+        <t t-call="web.html_container">
+           <t t-foreach="docs" t-as="creditcard">
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <h2>Credit Card Report</h2>
+                        <p><strong>Credit card number:</strong><t t-esc="creditcard.creditCardNumber"/></p>
+                        <p><strong>Creation date:</strong><t t-esc="creditcard.creationDate"/></p>
+                        <p><strong>Expiration date:</strong><t t-esc="creditcard.expirationDate"/></p>
+                        <p><strong>CVV:</strong><t t-esc="creditcard.cvv"/></p>
+                        <p><strong>PIN:</strong><t t-esc="creditcard.pin"/></p>
+                        <p><strong>Account number:</strong><t t-esc="creditcard.accountNumber"/></p>
+                        <p><strong>Credit card movements:</strong><t t-esc="creditcard.creditCardMovement"/></p>
+                    </div>
+                </t>
+           </t>
+        </t>
+
+    </template>
+</odoo>
