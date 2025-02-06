@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="inherit_user" model="ir.ui.view">
+        <field name="name">User Inherit</field>
+        <field name="model">grupo4.account</field>
+        <field name="inherit_id" ref="2RETO_G4.accounts_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <notebook>
+                    <page string="Emails">
+                            <tree>
+                                <field name="accountNumber" width="50"/>
+                            </tree>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+</odoo>

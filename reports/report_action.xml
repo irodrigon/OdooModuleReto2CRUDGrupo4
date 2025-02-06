@@ -1,0 +1,10 @@
+<odoo>
+    <record id="reportAccountAction" model="ir.actions.report">
+        <field name="name">Reporte de Cuenta</field>
+        <field name="model">grupo4.account</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">2RETO_G4.reportAccount</field>
+        <field name="print_report_name">'Account_Report_%s' % (object.accountNumber)</field>
+        <field name="binding_model_id" ref="model_grupo4_account"/>
+    </record>
+</odoo>

@@ -8,7 +8,10 @@
         'security/rovobank_security.xml',
         'security/ir.model.access.csv',
         'views/rovobankmenu.xml',
-        'views/accountView.xml'
+        'views/accountView.xml',
+        'reports/reportAccount.xml',
+        'reports/report_action.xml',
+        #'views/grupo4AccountsView.xml',
     ]
 }
 

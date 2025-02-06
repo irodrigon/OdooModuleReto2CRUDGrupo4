@@ -9,6 +9,7 @@
                 <field name="balance"/>
                 <field name="creationDate"/>
                 <field name="productId"/>
+                <field name="total_days_open"/>
                 <field name="credit_cards"/>
             </tree>
         </field>
@@ -19,6 +20,7 @@
         <field name="name">Accounts.form</field>
         <field name="model">grupo4.account</field>
         <field name="arch" type="xml">
+        <!--field name="total_days_open" readonly="1"/-->
             <form>
                 <sheet>
                     <group>
@@ -62,6 +64,7 @@
                                 <div ><field name="balance"/></div>
                                 <div ><field name="creationDate"/></div>
                                 <div ><field name="productId"/></div>
+                                <div ><field name="total_days_open"/></div>
                                 <div ><field name="credit_cards"/></div>
                             </div>
                         </div>
@@ -71,4 +74,7 @@
             </kanban>
         </field>
     </record>
+        <!-- reports-->
+
+
 </odoo>

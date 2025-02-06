@@ -6,3 +6,4 @@ from . import loan
 from . import User
 from . import Customer
 from . import Admin
+
